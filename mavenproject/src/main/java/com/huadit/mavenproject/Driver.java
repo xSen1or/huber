@@ -1,4 +1,6 @@
 package com.huadit.mavenproject;
+
+import static com.huadit.mavenproject.Clients.sc;
 import java.util.*; 
 
 
@@ -10,9 +12,10 @@ public class Driver {
     private int driverPhone;
     private String driverTaxNumber;
     private int driverID;
+    private boolean driverAvailability;
+    private List<Integer> driverRating; 
 
-
-    public void driver(String driverName, String driverPassword, String driverEmail, String driverAddress, int driverPhone, String driverTaxNumber, int driverID) {
+    public Driver(String driverName, String driverPassword, String driverEmail, String driverAddress, int driverPhone, String driverTaxNumber, int driverID, boolean driverAvailability, List<Integer> driverRating) {
         this.driverName = driverName;
         this.driverPassword = driverPassword;
         this.driverEmail = driverEmail;
@@ -20,6 +23,8 @@ public class Driver {
         this.driverPhone = driverPhone;
         this.driverTaxNumber = driverTaxNumber;
         this.driverID = driverID;
+        this.driverAvailability = true;
+        this.driverRating = new ArrayList<>();
     }
 
     public static List<Driver> drivers = new ArrayList<>(); 
@@ -48,7 +53,11 @@ public class Driver {
     public int getDriverID() {
         return driverID;
     }
-
+    public boolean getDriverAvailability() {
+        return driverAvailability;
+    }
+   
+    
     public void setDriverName(String newDriverName) {
         driverName = newDriverName;
     }
@@ -70,4 +79,7 @@ public class Driver {
     public void setDriverID(int newDriverID) {
         driverID = newDriverID;
     }
+    public void setDriverAvailability(boolean newDriverAvailability) {
+        driverAvailability = newDriverAvailability;
+    }  
 }
