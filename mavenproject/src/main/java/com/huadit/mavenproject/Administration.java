@@ -5,7 +5,6 @@
 package com.huadit.mavenproject;
 import static com.huadit.mavenproject.Mavenproject.clients;
 import static com.huadit.mavenproject.Mavenproject.drivers;
-import static com.huadit.mavenproject.Mavenproject.blocked;
 
 import java.util.Scanner; 
 
@@ -16,8 +15,7 @@ import java.util.Scanner;
 
 public class Administration {
     static Scanner sc = new Scanner(System.in); 
-    
-    
+        
     private String adminUsername;
     private String adminPassword;
     private String adminEmail; 

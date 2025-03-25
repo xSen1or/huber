@@ -11,7 +11,7 @@ import java.util.concurrent.*;
  * @author jimma
  */
 public class Clients {
-
+    
     static Scanner sc = new Scanner(System.in);
 
     private String clientName;
@@ -159,8 +159,12 @@ public class Clients {
                 addRoute(new Routes(clientUsername, driver.getDriverName(), routeStartPoint, routeEndPoint, 0));
                 driver.setDriverAvailability(false);
                 ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
-
-
+                Random rand = new Random(); 
+                int randomTripTime = rand.nextInt(0,10);
+                System.out.println("Your HUBER has arrived.\nYour estimated time of arriving is: " + randomTripTime + "minutes");
+                scheduler.schedule(() -> System.out.println("test"), randomTripTime, TimeUnit.SECONDS); 
+                    
+                
                 break;
             }
         }
