@@ -3,7 +3,6 @@ package com.huadit.mavenproject;
 import static com.huadit.mavenproject.Mavenproject.clients;
 import static com.huadit.mavenproject.Mavenproject.drivers;
 import static com.huadit.mavenproject.Routes.addRoute;
-import static com.huadit.mavenproject.Driver.addDriverRating;
 
 
 import java.util.*;
@@ -161,7 +160,7 @@ public class Clients {
                 if (huberRating >= 0 && huberRating <= 10) {
                     System.out.println("Thank you for your time helping us!");
                     try {
-
+                        driver.addDriverRating(huberRating); 
                     } catch (Exception e ) {
                         System.out.println("Error found in Clients.java at line 160");
                         System.out.println(e);

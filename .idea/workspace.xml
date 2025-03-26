@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a3868b-854b-4117-9c63-99466853e115" name="Changes" comment="" />
+    <list default="true" id="75a3868b-854b-4117-9c63-99466853e115" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/mavenproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Administration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Administration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Clients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/src/main/java/com/huadit/mavenproject/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Administration.class" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Administration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Clients.class" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Clients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/target/classes/com/huadit/mavenproject/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavenproject/target/mavenproject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mavenproject/target/mavenproject-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2uksJqmaixLwOTtfYjayTdCG1A0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742803837762</updated>
       <workItem from="1742803839560" duration="657000" />
+      <workItem from="1743029045134" duration="89000" />
     </task>
     <servers />
   </component>
