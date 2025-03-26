@@ -5,7 +5,6 @@
 package com.huadit.mavenproject;
 import static com.huadit.mavenproject.Mavenproject.clients;
 import static com.huadit.mavenproject.Mavenproject.drivers;
-import static com.huadit.mavenproject.Mavenproject.blocked;
 
 import java.util.Scanner; 
 
