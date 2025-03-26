@@ -15,8 +15,7 @@ import java.util.Scanner;
 
 public class Administration {
     static Scanner sc = new Scanner(System.in); 
-    
-    
+        
     private String adminUsername;
     private String adminPassword;
     private String adminEmail; 

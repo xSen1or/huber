@@ -3,6 +3,9 @@ package com.huadit.mavenproject;
 import static com.huadit.mavenproject.Mavenproject.clients;
 import static com.huadit.mavenproject.Mavenproject.drivers;
 import static com.huadit.mavenproject.Routes.addRoute;
+import static com.huadit.mavenproject.Driver.addDriverRating;
+
+
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -11,7 +14,7 @@ import java.util.concurrent.*;
  * @author jimma
  */
 public class Clients {
-
+    
     static Scanner sc = new Scanner(System.in);
 
     private String clientName;
@@ -145,6 +148,34 @@ public class Clients {
         return answers.get(0);
     }
 
+  
+    public static void displayStars() {
+
+    }
+
+    public static void rateHuber(Driver driver) {
+        System.out.println("Rate your HUBER experience with a value of 0-10");
+        if (sc.hasNextInt()) {
+            while (true) {
+                int huberRating = sc.nextInt(); 
+                if (huberRating >= 0 && huberRating <= 10) {
+                    System.out.println("Thank you for your time helping us!");
+                    try {
+
+                    } catch (Exception e ) {
+                        System.out.println("Error found in Clients.java at line 160");
+                        System.out.println(e);
+                    }
+                } else {
+                    System.out.println("Invalid Option. \nPlease submit a value between 0-10");
+                    huberRating = sc.nextInt();
+                }
+            }            
+        }
+
+    }  
+
+
     public static void requestHuber(String clientUsername) {
         //User Menu
         System.out.println("Nice to see you again " + clientUsername);
@@ -159,14 +190,15 @@ public class Clients {
                 addRoute(new Routes(clientUsername, driver.getDriverName(), routeStartPoint, routeEndPoint, 0));
                 driver.setDriverAvailability(false);
                 ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
-
+                Random rand = new Random(); 
+                int randomTripTime = rand.nextInt(0,10);
+                System.out.println("Your HUBER has arrived.\nYour estimated time of arriving is: " + randomTripTime + "minutes");
+                scheduler.schedule(() -> System.out.println("test"), randomTripTime, TimeUnit.SECONDS); 
+                rateHuber(driver);                 
 
                 break;
             }
         }
     }
-    
-    public static void rateHuber(Driver driver) {
-        
-    }    
+   
 }

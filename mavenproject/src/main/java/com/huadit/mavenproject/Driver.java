@@ -1,6 +1,5 @@
 package com.huadit.mavenproject;
 
-import static com.huadit.mavenproject.Clients.sc;
 import java.util.*; 
 
 
@@ -56,8 +55,7 @@ public class Driver {
     public boolean getDriverAvailability() {
         return driverAvailability;
     }
-   
-    
+       
     public void setDriverName(String newDriverName) {
         driverName = newDriverName;
     }
@@ -82,4 +80,16 @@ public class Driver {
     public void setDriverAvailability(boolean newDriverAvailability) {
         driverAvailability = newDriverAvailability;
     }  
+
+    public void addDriverRating(int rating) {
+        driverRating.add(rating); 
+    }
+    
+    public float getDriverAverageRating() {
+        int sumOfRatings = 0;
+        for (int i = 0; i < driverRating.size(); i++) {
+            sumOfRatings += driverRating.get(i);
+        } 
+        return (sumOfRatings/driverRating.size()); 
+    }
 }
