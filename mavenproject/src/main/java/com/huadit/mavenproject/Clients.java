@@ -148,8 +148,11 @@ public class Clients {
     }
 
   
-    public static void displayStars() {
-
+    public static void displayStars(Driver targetDriver) {
+        float count = targetDriver.getDriverAverageRating();
+        for (int i = 0; i < count; i++) {
+            System.out.println("⭐");
+        }   
     }
 
     public static void rateHuber(Driver driver) {
